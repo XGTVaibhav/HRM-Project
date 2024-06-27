@@ -1,0 +1,83 @@
+ /* ------------------------------------------------index starts ------------------------------------------*/
+body,
+button {
+    font-family: "Inter", sans-serif !important;
+}
+
+:root {
+    --offcanvas-width: 270px !important;
+    --topNavbarHeight: 56px !important;
+}
+
+.sidebar-nav {
+    width: var(--offcanvas-width) !important;
+}
+
+.sidebar-link {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.sidebar-link .right-icon {
+    display: inline-flex  !important;
+}
+
+.sidebar-link[aria-expanded="true"] .right-icon {
+    transform: rotate(180deg) !important;
+}
+
+.sidebar-link1 {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.sidebar-link1 .right-icon1 {
+    display:inline-flex  !important;
+}
+
+.sidebar-link1[aria-expanded="true"] .right-icon1 {
+    transform: rotate(180deg) !important;
+}
+
+@media (min-width: 992px) {
+    body {
+        overflow: auto !important;
+    }
+
+    main {
+        margin-left: var(--offcanvas-width) !important;
+    }
+
+    /* this is to remove the backdrop */
+    .offcanvas-backdrop::before {
+        display: none !important;
+    }
+
+    .sidebar-nav {
+        -webkit-transform: none!important;
+        transform: none !important;
+        visibility: visible !important;
+        height: calc(100% - var(--topNavbarHeight)) !important;
+        top: var(--topNavbarHeight) !important;
+    }
+}
+    .ecrd{
+        border-radius: 1rem;
+    }
+  
+ .sam1{
+    position: relative;
+ height: 200px;
+     background-color:#7b64e3;
+ }
+ 
+ .sam-1{
+     width: 100%;
+     position: absolute;
+     top: 50%;
+ }
+ .sg2{
+     width: 80%;
+     margin-top: 50px;
+ 
+ }
